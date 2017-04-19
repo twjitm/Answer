@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始考试" 
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:padding="10dip"
+        android:background="@drawable/darkblue_btn_bg"
+        />
+
+</RelativeLayout>

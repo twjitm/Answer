@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/info_layout_bg"
+    >
+    
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+    
+    <RelativeLayout
+        android:id="@+id/vote_submit_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        >
+
+        <com.example.answer.view.VoteSubmitViewPager
+            android:id="@+id/vote_submit_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/vote_submit_linear_dot"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+    
+</RelativeLayout>
